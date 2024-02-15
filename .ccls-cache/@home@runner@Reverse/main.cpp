@@ -179,11 +179,12 @@ void reverse(){
   Node* after = temp->next;
   Node* before = nullptr;
 
-  for(int i = 0; i < length; i++)
+  for(int i = 0; i < length; i++){
     after = temp->next;
     temp->next = before;
     before = temp;
     temp = after;
+}
 }
 };
 
